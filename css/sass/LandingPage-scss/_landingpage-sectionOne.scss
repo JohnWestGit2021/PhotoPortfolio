@@ -1,0 +1,19 @@
+.gridContainer{
+    width: 100%;
+    max-width: 170rem;
+    height: 140rem;
+    margin:auto;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    padding:3rem 0;
+    gap: 2rem;
+    
+
+    .grid-item{
+        background-color: gray;
+    }
+}
