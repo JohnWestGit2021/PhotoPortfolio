@@ -1,7 +1,7 @@
 .gridContainer{
     width: 100%;
-    max-width: 180rem;
-    height: 140rem;
+    max-width: 210rem;
+    height: 100%;
     margin:auto;
 
 
@@ -14,6 +14,10 @@
     
 
     .grid-item{
-        background-color: gray;
+
+        img{
+            object-fit: cover;
+            margin: auto;
+        }
     }
 }

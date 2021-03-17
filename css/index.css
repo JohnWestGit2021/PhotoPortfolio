@@ -42,13 +42,13 @@ img {
   height: 100%;
   margin: auto;
   background-color: #ffffff;
-  padding: 5rem;
+  padding: 4rem;
 }
 
 .white-outside-border .hero {
   width: 100%;
   max-width: 200rem;
-  height: 50rem;
+  height: 55rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +63,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: lightgray;
+  background: url(/Image/LandingPage-Photos/marmor.jpg);
 }
 
 .white-outside-border .hero .textContainer {
@@ -101,23 +101,24 @@ img {
       -ms-flex-align: end;
           align-items: flex-end;
   width: 100%;
-  max-width: 43rem;
+  max-width: 63rem;
   height: 8rem;
 }
 
 .white-outside-border .hero .header-btnContainer .hero-btn {
   background-color: #2d3032ce;
-  width: 20rem;
+  width: 18rem;
   height: 5rem;
   color: #C18FFF;
   border: none;
   border-radius: 0;
+  text-transform: uppercase;
 }
 
 .gridContainer {
   width: 100%;
-  max-width: 180rem;
-  height: 140rem;
+  max-width: 210rem;
+  height: 100%;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -129,7 +130,9 @@ img {
   gap: 2rem;
 }
 
-.gridContainer .grid-item {
-  background-color: gray;
+.gridContainer .grid-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
 }
 /*# sourceMappingURL=index.css.map */

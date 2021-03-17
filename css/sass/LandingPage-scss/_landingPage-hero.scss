@@ -1,12 +1,12 @@
 .white-outside-border{
     @include SectionSize(100%);
     background-color: $light-BackgroundColor;
-    padding:5rem;
+    padding:4rem;
 
     .hero{
-        @include SectionSize(50rem);
+        @include SectionSize(55rem);
         @include flex(column, flex-start, center);
-        background-color: lightgray;
+        background: url(/Image/LandingPage-Photos/marmor.jpg);
 
         .textContainer{
             @include flex(column, center, center);
@@ -19,18 +19,20 @@
         .header-btnContainer{
             @include flex(row, space-between, flex-end);
             width: 100%;
-            max-width: 43rem;
+            max-width: 63rem;
             height: 8rem;
 
             .hero-btn{
                 background-color: $dark-BackgroundColor-dim;
-                width: 20rem;
+                width: 18rem;
                 height: 5rem;
 
                 color: $Light-Maincolor;
 
                 border:none;
                 border-radius: 0;
+
+                text-transform: uppercase;
             }
         }
     }
