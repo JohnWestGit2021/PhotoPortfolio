@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*global*/
 /*globla reset*/
 *,
@@ -42,7 +43,7 @@ img {
   height: 100%;
   margin: auto;
   background-color: #ffffff;
-  padding: 4rem;
+  padding: 1.5%;
 }
 
 .white-outside-border .hero {
@@ -84,6 +85,51 @@ img {
   width: 100%;
   max-width: 75rem;
   height: 30rem;
+  position: relative;
+}
+
+.white-outside-border .hero .textContainer .hero-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 63rem;
+  height: 60%;
+  border: 2.5px solid #9615DB;
+}
+
+.white-outside-border .hero .textContainer .hero-article .hero-subHeading {
+  color: #C18FFF;
+  letter-spacing: 0.8rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 11%;
+}
+
+.white-outside-border .hero .textContainer .hero-article h1 {
+  color: #ffffff;
+  font-size: 5rem;
+}
+
+.white-outside-border .hero .textContainer .hero-borderHeading {
+  background-color: #4a4f50;
+  /*importent: this removes broder*/
+  padding: 0 1.5rem;
+  color: #C18FFF;
+  letter-spacing: 0.8rem;
+  position: absolute;
+  bottom: 5.2rem;
+  right: 14%;
 }
 
 .white-outside-border .hero .header-btnContainer {
@@ -110,9 +156,16 @@ img {
   width: 18rem;
   height: 5rem;
   color: #C18FFF;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
   border: none;
   border-radius: 0;
   text-transform: uppercase;
+}
+
+.white-outside-border .hero .header-btnContainer .hero-btn:hover {
+  cursor: pointer;
+  background-color: #2D3032;
 }
 
 .gridContainer {
@@ -127,12 +180,78 @@ img {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   padding: 3rem 0;
-  gap: 2rem;
+  row-gap: 0.8%;
+  -webkit-column-gap: 1%;
+          column-gap: 1%;
+}
+
+.gridContainer .grid-item {
+  position: relative;
+  /*img classes for changing images to colors*/
+  /*grid overlappng btns on item 3,5,7*/
 }
 
 .gridContainer .grid-item img {
   -o-object-fit: cover;
      object-fit: cover;
   margin: auto;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.gridContainer .grid-item .itemOne:hover {
+  content: url(../Image/LandingPage-Photos/rutaEttfärg.webp);
+}
+
+.gridContainer .grid-item .itemTwo:hover {
+  content: url(../Image/LandingPage-Photos/rutaTvåfärg.webp);
+}
+
+.gridContainer .grid-item .itemFour:hover {
+  content: url(../Image/LandingPage-Photos/rutaFyrafärg.webp);
+}
+
+.gridContainer .grid-item .itemSix:hover {
+  content: url(../Image/LandingPage-Photos/rutaFyrafärg.webp);
+}
+
+.gridContainer .grid-item .itemEight:hover {
+  content: url(../Image/LandingPage-Photos/rutaÅttafärg.webp);
+}
+
+.gridContainer .grid-item .itemNine:hover {
+  content: url(../Image/LandingPage-Photos/rutaNiofärg.webp);
+}
+
+.gridContainer .grid-item .grid-navButton {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2d3032a2;
+  width: 100%;
+  height: 25%;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.gridContainer .grid-item .grid-navButton .navLink {
+  font-size: 2.8rem;
+  color: #ffffff;
+}
+
+.gridContainer .grid-item .grid-navButton:hover {
+  height: 100%;
 }
 /*# sourceMappingURL=index.css.map */

@@ -10,14 +10,64 @@
     grid-template-rows: 1fr 1fr 1fr;
 
     padding:3rem 0;
-    gap: 2rem;
+    row-gap: 0.8%;
+    column-gap: 1%;
     
 
     .grid-item{
-
+        position: relative;
+      
         img{
             object-fit: cover;
             margin: auto;
+            transition: all 1s ease-in-out;
+        }
+
+
+        /*img classes for changing images to colors*/
+        .itemOne:hover{
+            content:url(../Image/LandingPage-Photos/rutaEttfärg.webp);
+            // transform: scale(1.05);
+        }
+
+        .itemTwo:hover{
+            content:url(../Image/LandingPage-Photos/rutaTvåfärg.webp);
+        }
+        
+        .itemFour:hover{
+            content:url(../Image/LandingPage-Photos/rutaFyrafärg.webp);
+        }
+        .itemSix:hover{
+            content:url(../Image/LandingPage-Photos/rutaFyrafärg.webp);
+        }
+        .itemEight:hover{
+            content:url(../Image/LandingPage-Photos/rutaÅttafärg.webp);
+        }
+
+        .itemNine:hover{
+            content:url(../Image/LandingPage-Photos/rutaNiofärg.webp);
+        }
+
+        /*grid overlappng btns on item 3,5,7*/
+        .grid-navButton{
+            position: absolute;
+            top: 0;
+
+            @include flex(row, center, center);
+            background-color: $dark-BackgroundColor-dim-navBtn;
+            width: 100%;
+            height: 25%;
+
+            transition: all 1.5s ease-in-out;
+
+            .navLink{
+                font-size: 2.8rem;
+                color: $light-TextColor;
+            }
+        }
+
+        .grid-navButton:hover{
+            height: 100%;
         }
     }
 }
