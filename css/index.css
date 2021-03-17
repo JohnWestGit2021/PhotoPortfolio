@@ -38,7 +38,7 @@ img {
 /*sections*/
 .white-outside-border {
   width: 100%;
-  max-width: 180rem;
+  max-width: 200rem;
   height: 100%;
   margin: auto;
   background-color: #ffffff;
@@ -47,7 +47,7 @@ img {
 
 .white-outside-border .hero {
   width: 100%;
-  max-width: 180rem;
+  max-width: 200rem;
   height: 50rem;
   margin: auto;
   display: -webkit-box;
@@ -116,7 +116,7 @@ img {
 
 .gridContainer {
   width: 100%;
-  max-width: 170rem;
+  max-width: 180rem;
   height: 140rem;
   margin: auto;
   display: -ms-grid;

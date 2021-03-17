@@ -52,7 +52,7 @@ $light-TextColor:#ffffff;
 /*mixins*/
 @mixin SectionSize ($height){
     width: 100%;
-    max-width: 180rem;
+    max-width: 200rem;
     height: $height;
     margin:auto;
 }
