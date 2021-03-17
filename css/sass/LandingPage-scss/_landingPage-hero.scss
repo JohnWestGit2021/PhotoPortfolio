@@ -1,12 +1,13 @@
 .white-outside-border{
     @include SectionSize(100%);
     background-color: $light-BackgroundColor;
-    padding:4rem;
+    padding:1.5%;
 
     .hero{
         @include SectionSize(55rem);
         @include flex(column, flex-start, center);
         background: url(/Image/LandingPage-Photos/marmor.jpg);
+       
 
         .textContainer{
             @include flex(column, center, center);
@@ -14,6 +15,40 @@
             width: 100%;
             max-width: 75rem;
             height: 30rem;
+            position: relative;
+
+            .hero-article{
+                @include flex(column, center, center);
+                width: 100%;
+                max-width: 63rem;
+                height: 60%;
+
+                border: 2.5px solid $Maincolor;
+
+                .hero-subHeading{
+                    color: $Light-Maincolor;
+                    letter-spacing: 0.8rem;
+                    align-self: flex-start;
+                    margin-left: 11%;
+                }
+
+                h1{
+                    color: $light-TextColor;
+                    font-size: 5rem
+                }
+            }
+
+            .hero-borderHeading{
+                background-color: #4a4f50; /*importent: this removes broder*/
+                padding: 0 1.5rem;
+
+                color: $Light-Maincolor;
+                letter-spacing: 0.8rem;
+
+                position: absolute;
+                bottom: 5.2rem;
+                right: 14%;
+            }
         }
 
         .header-btnContainer{
@@ -28,11 +63,18 @@
                 height: 5rem;
 
                 color: $Light-Maincolor;
+                font-size: 1.6rem;
+                letter-spacing: 0.5rem;
 
                 border:none;
                 border-radius: 0;
 
                 text-transform: uppercase;
+            }
+
+            .hero-btn:hover{
+                cursor: pointer;
+                background-color: $dark-BackgroundColor;
             }
         }
     }
