@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*global*/
 /*globla reset*/
 *,
@@ -199,33 +198,27 @@ img {
   transition: all 1s ease-in-out;
 }
 
-.gridContainer .grid-item .itemOne:hover {
-  content: url(../Image/LandingPage-Photos/rutaEttfärg.webp);
+.gridContainer .grid-item .FilterImage {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
-.gridContainer .grid-item .itemTwo:hover {
-  content: url(../Image/LandingPage-Photos/rutaTvåfärg.webp);
-}
-
-.gridContainer .grid-item .itemFour:hover {
-  content: url(../Image/LandingPage-Photos/rutaFyrafärg.webp);
-}
-
-.gridContainer .grid-item .itemSix:hover {
-  content: url(../Image/LandingPage-Photos/rutaFyrafärg.webp);
-}
-
-.gridContainer .grid-item .itemEight:hover {
-  content: url(../Image/LandingPage-Photos/rutaÅttafärg.webp);
-}
-
-.gridContainer .grid-item .itemNine:hover {
-  content: url(../Image/LandingPage-Photos/rutaNiofärg.webp);
+.gridContainer .grid-item .FilterImage:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .gridContainer .grid-item .grid-navButton {
   position: absolute;
   top: 0;
+  background-color: #2d3032a2;
+  width: 100%;
+  height: 25%;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+
+.gridContainer .grid-item .grid-navButton .navLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,19 +232,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #2d3032a2;
-  width: 100%;
-  height: 25%;
-  -webkit-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
-}
-
-.gridContainer .grid-item .grid-navButton .navLink {
-  font-size: 2.8rem;
+  font-size: calc(2.8rem - 100%);
   color: #ffffff;
-}
-
-.gridContainer .grid-item .grid-navButton:hover {
+  width: 100%;
+  max-width: inherit;
   height: 100%;
+  max-height: inherit;
 }
 /*# sourceMappingURL=index.css.map */
