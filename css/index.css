@@ -1,0 +1,135 @@
+/*global*/
+/*globla reset*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  font-size: 62.5%;
+  /*1 rem = 10px*/
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  /*makes img fit in their containers*/
+  max-width: 100%;
+  display: block;
+}
+
+/*colors*/
+/*mixins*/
+/*sections*/
+.white-outside-border {
+  width: 100%;
+  max-width: 180rem;
+  height: 100%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 5rem;
+}
+
+.white-outside-border .hero {
+  width: 100%;
+  max-width: 180rem;
+  height: 50rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightgray;
+}
+
+.white-outside-border .hero .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2d3032ce;
+  width: 100%;
+  max-width: 75rem;
+  height: 30rem;
+}
+
+.white-outside-border .hero .header-btnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  max-width: 43rem;
+  height: 8rem;
+}
+
+.white-outside-border .hero .header-btnContainer .hero-btn {
+  background-color: #2d3032ce;
+  width: 20rem;
+  height: 5rem;
+  color: #C18FFF;
+  border: none;
+  border-radius: 0;
+}
+
+.gridContainer {
+  width: 100%;
+  max-width: 170rem;
+  height: 140rem;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  padding: 3rem 0;
+  gap: 2rem;
+}
+
+.gridContainer .grid-item {
+  background-color: gray;
+}
+/*# sourceMappingURL=index.css.map */
