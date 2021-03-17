@@ -6,7 +6,7 @@
     .hero{
         @include SectionSize(55rem);
         @include flex(column, flex-start, center);
-        background: url(/Image/LandingPage-Photos/marmor.jpg);
+        background: url(../Image/LandingPage-Photos/marmor.jpg);
        
 
         .textContainer{
