@@ -49,6 +49,7 @@
             height: 25%;
 
             transition: all 1.5s ease;
+            
 
             .navLink{
                 @include flex(row, center, center);
@@ -62,6 +63,5 @@
                
             }
         }
-
     }
 }
